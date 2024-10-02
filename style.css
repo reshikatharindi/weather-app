@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans' ,sans-serif;
+}
+
+body{
+    background: #dfe4ea;
+
+}
+
+h1{
+    color: white;
+    padding: 5px 0;
+    font-size: 1.75rem;
+    background: #2f3542;
+}
+.container{
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+
+}
+
+.weather-input input{
+    width:100%;
+    height: 26px;
+    outline: none;
+    padding: 0 5px;
+    font-size: 1.07rem;
+    border: 1px solid #70a1ff;
+    margin: 10px 0 20px 0;
+    border-radius: 4px;
+}
+
+
+.weather-input {
+    width: 550px;
+
+}
+
+/* .weather-input button{ */
+
+    .search-btn{
+    background-color: #3498db; 
+    color: white; 
+    border: none; 
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+
+.search-btn:hover {
+    background-color: #2980b9; 
+}
+
+
+.location-btn{
+    background-color: #95a5a6; 
+    color: white; 
+    border: none; 
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+
+}
+
+
+.location-btn:hover {
+    background-color: #7f8c8d;
+}
+
+
+
+.weather-data{
+    width: 100%;
+}
+
+.current-weather {
+    background:#f1f2f6;
+    color: #2f3542;
+    padding:20px 70px 20px 20px ;
+    justify-content: space-between;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+}
+
+
+.current-weather h2{
+    font-size: 1.7rem;
+}
+.weather-data h4{
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.current-weather  .icon img{
+  max-width: 100px;
+  margin-top: -10px;
+
+}
+
+.current-weather .icon h4{
+    margin-top: -10px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.day-forecast h2{
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.weather-cards{
+   display: flex; 
+   gap: 20px;
+}
+
+
+.weather-cards .card{
+    background-color:#f1f2f6 ;
+    list-style: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius:5px ;
+    width: calc(100% /6);
+}
+
+
+.weather-cards .card img {
+    max-width: 60px; /* Reduce the icon size */
+    margin: 10px 0; /* Adjust margin for spacing */
+}
+
+.weather-cards .card h2 {
+    font-size: 1.2rem; /* Make the date text smaller */
+}
+
+.weather-cards .card h4 {
+    font-size: 0.9rem; /* Reduce font size for temperature, wind, and humidity */
+}
